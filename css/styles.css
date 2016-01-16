@@ -320,15 +320,20 @@ p.main a:hover {
 
 p.case-study {
   text-align: left;
-  line-height: 1.6;
+  line-height: 2;
 }
 
 a h4 {
   color: #4dcca3;
 }
 
+h4.case-study {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
 img.project-intro {
-  margin: 15px 0;
+  margin-top: 15px;
 }
 
 img.project-work {
@@ -384,7 +389,7 @@ header p {
 }
 
 img.project-intro {
-  margin: 20px 0;
+  margin-top: 20px;
 }
 
 img.project-work {
