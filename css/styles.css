@@ -2,7 +2,14 @@
 
 .navbar-default .navbar-nav>li>a:hover {
   color: #39DCBC;
-  transition: all .3s ease-in-out;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #999999;
+  -webkit-transition: all .5s ease-in-out;
+       -moz-transition: all .5s ease-in-out;
+         -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
 }
 
 body {
@@ -16,57 +23,73 @@ body {
 
 /* Fonts */
 
-h1, h2, h3, h4 {
-  font-family: Josefin Sans;
-  font-weight: 400;
-}
-
-h2, h3, h4, p {
-  color: #212338;
+*, h1, h2, h3, h4, p {
+  font-family: Hind;
 }
 
 h1 {
-  color: #fff;
+  color: #444444;
   margin-top: 35px;
   margin-bottom: 5px;
   font-size: 40px;
+  font-weight: 300;
 }
 
 h2.main {
   color: #39DCBC; /* #91ECCF too light? */
   font-size: 20px;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+  font-weight: 700;
 }
 
 h2 {
   font-size: 30px;
   margin-top: 35px;
+  font-weight: 300;
+  color: #444444;
 
 }
 
 h3 {
   font-size: 18px;
   margin-top: 0;
+  font-weight: 400;
+  color: #39DCBC;
 }
 
 h4 {
   font-size: 16px;
+  font-weight: 400;
+  color: #444444;
 }
 
 .nav>li, p {
   font-family: Hind;
   font-weight: 300; 
   font-size: 12px;
+  color: #444444;
 }
 
-p.footer, p.cta, a.cta {
-  color: #A4B0FF; 
+ol li {
+  color: #444444;
+  line-height: 2;
+  font-weight: 300;
+  text-align: left; 
+}
+
+p.footer, p.cta {
+  color: #999999; 
 }
 
 p.footer {
   font-size: 10px;
   margin-bottom: 0;
+}
+
+p a {
+  color: #39DCBC;
+  font-weight: 500;
 }
 
 /* Images */
@@ -79,62 +102,33 @@ p.footer {
 #contact {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-image: url("../img/pattern_bg.png");
+  background-repeat: repeat;
 }
 
 .contact-project {
   margin-top: 24.5px;
 }
 
-p.cta {
-  margin-bottom: 20px;
-}
-
-/* Hire Me Button */
-button {
-  border: 2px solid #A4B0FF;
-  height: 54px;
-  width: 120px;
-  border-radius: 5%;
-  background-color: #1e255d;
-  font-size: 20px;
-}
-
-button:hover {
-  border: solid 2px #39DCBC;
-  color: #1e255d;
-  background: #39DCBC;
-  transition: all .5s ease-in-out;
-}
-
-a.cta:hover {
-  text-decoration: none;
-}
-
 /* Social Media Icons */
 .btn-social {
   display: inline-block;
-  width: 45px;
-  height: 45px;
-  /*border: 2px solid #1e255d;*/
-  border-radius: 100%;
   text-align: center;
   font-size: 22px;
-  line-height: 43px;
 }    
 
 .btn-outline {
-  margin-top: 15px;
-  /*border: solid 2px #1e255d;*/
   font-size: 22px;
-  color: #A4B0FF;
+  color: #999999;
   background: 0 0;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+       -moz-transition: all .5s ease-in-out;
+         -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
 }
 
 .btn-outline:hover {
-    /*border: solid 2px #4dcca3;*/
-  color: #1e255d;
-  background: #39DCBC;
+  color: #39DCBC;
 }
 
 /* Spacing Around Social Media */
@@ -145,9 +139,17 @@ a.cta:hover {
 
 /******* Navigation Bars *******/
 
+nav {
+  box-shadow: 0px 1px 2px 1px rgba(0,0,0,.1);
+}
+
+#nav-logo-animate {
+ opacity: 0;
+}
+
 /** Homepage Nav **/
 .navbar-default, #contact {
-  background-color: #1e255d;
+  background-color: #ffffff;
 }
 
 .navbar-header {
@@ -169,6 +171,10 @@ a.cta:hover {
 .navbar-brand {
   padding-top: 11.5px;
   padding-bottom: 11.5px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #999999;
 }
 
 /** Project Nav **/
@@ -194,16 +200,26 @@ a.cta:hover {
   float:none;
 }
 
+.navbar li i {
+  font-size: 30px;
+  color: #999999;
+  -webkit-transition: all .5s ease-in-out;
+       -moz-transition: all .5s ease-in-out;
+         -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+}
+
+.navbar li i:hover {
+  font-size: 30px;
+  color: #39DCBC;
+}
+
 .nav>li.next-project>a {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  margin-top: -8px;
+  padding: 12px 12px;
 }
 
 /* iPhone 5 small project nav */
-.nav>li.next-project>a {
-  padding: 0 0;
-}
-
 .nav-center{
   line-height: 2.4;
 }
@@ -215,52 +231,32 @@ a.cta:hover {
 
 
 /* Highlight Arrow Background */
-.nav>li.next-project>a:hover {
+/*.nav>li.next-project>a:hover {
   background-color: #39DCBC;
-  transition: all .3s ease-in-out;
-} 
+  -webkit-transition: all .5s ease-in-out;
+       -moz-transition: all .5s ease-in-out;
+         -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+}*/ 
 
 /******* Homepage *******/
 
-/* Header Background Color Overlay on Pattern */
-.blue-cover {
-  background-color: rgba(12, 26, 139, 0.5);
-  width: 100%;
-  height: 100%;
+/** Header Section **/
+img.logo-main {
+  margin-top: 90px;
 }
 
 header {
-  background-image: url("../img/Sharp_Edges.png");
+  background-image: url("../img/pattern_bg.png");
   background-repeat: repeat;
-}
-
-header p {
-  padding-bottom: 35px;
-}
-
-p.main {
-  margin-bottom: 10px;
-  line-height: 1.6;
-  color: #A4B0FF;
-}
-
-p.main a {
-  color: #7A89FF;
-}
-
-p.main a:hover {
-  color: #39DCBC; 
-  text-decoration: none;
-  -webkit-transition: all ease-in-out .3s;
-  -moz-transition: all ease-in-out .3s;
-  transition: all ease-in-out .3s;
+  margin-top: -60px;
 }
 
 /** Projects Section **/
 
 /* spacing around section */
 #projects {
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 30px;
 }
 
@@ -270,14 +266,32 @@ p.main a:hover {
   margin-bottom: 30px;
 }
 
-/* make whole box a link, don't exceed orignal image size */
+/* make whole box a link, don't exceed orignal image size. (Removed as of 2016 redesign.) */
 .project-link {
   display: block;
   position: relative;
   margin: 0 auto;
-  max-width: 485px; 
+  /*max-width: 485px;*/
+  background-color: #F7F7F7;
+  height: 400px; 
 }
 
+img.project-cover {
+  max-width: 400px;
+}
+
+.table {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.table-cell {
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
 
 /* Project Hover Elements */
 .caption {
@@ -285,10 +299,11 @@ p.main a:hover {
   width: 100%;
   height: 100%;
   opacity: 0;
-  background: rgba(30,37,93,.95);
-  -webkit-transition: all ease .5s;
-  -moz-transition: all ease .5s;
-  transition: all ease .5s;
+  background: rgba(68,68,68,.8);
+  -webkit-transition: all .5s ease-in-out;
+       -moz-transition: all .5s ease-in-out;
+         -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
 }
 
 .caption:hover {
@@ -305,34 +320,66 @@ p.main a:hover {
 
 .caption-content h4 {
   color: #fff;
+  font-weight: 300;
 }
 
 .caption-content p {
-  color: #7A89FF;
+  color: #39DCBC;
+  font-weight: 500;
 }
 
-.caption-content p:hover {
-  color: #39DCBC; 
-  /*color: #4dcca3;  too bright */
-  -webkit-transition: all ease .3s;
-  -moz-transition: all ease .3s;
-  transition: all ease .3s;
+/******* About Page *******/
+
+.portrait {
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+
+h2.about {
+  color: #39DCBC;
+  font-weight: 500;
+  text-align: left;
+}
+
+p.about {
+  margin-top: 20px;
+}
+
+.list-item {
+  font-weight: 700;
 }
 
 /******* Project Pages *******/
 
-p.case-study {
+p.about, p.case-study {
   text-align: left;
   line-height: 2;
 }
 
-a h4 {
-  color: #4dcca3;
+/* Button */
+button {
+  border: 3px solid #39DCBC;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  font-size: 16px;
+  color: #39DCBC;
+  font-weight: 400;
+  -webkit-transition: all .5s ease-in-out;
+     -moz-transition: all .5s ease-in-out;
+       -o-transition: all .5s ease-in-out;
+          transition: all .5s ease-in-out;
+}
+
+button:hover {
+  color: #FFFFFF;
+  background: #39DCBC;
 }
 
 h4.case-study {
   margin-top: 30px;
   margin-bottom: 15px;
+  text-align: left;
 }
 
 img.project-intro {
@@ -344,11 +391,17 @@ img.project-work {
   margin-bottom: 10.5px;
 }
 
+img.bg {
+  background: #F7F7F7;
+  padding: 20px 50px;
+}
+
 @media (min-width: 480px) {
 
 /* Remove iPhone 5 small project nav styles*/
 .nav>li.next-project>a {
-  padding: 12px 15px;
+  margin-top: 0px;
+  padding: 14px 14px;
 }
 
 .nav-center{
@@ -376,6 +429,10 @@ h4 {
   font-size: 18px;
 }
 
+button {
+  font-size: 18px;
+}
+
 }
 
 @media (min-width: 768px) {
@@ -388,10 +445,6 @@ body {
   font-size: 30px;
 }
 
-header p {
-  padding-bottom: 50px;
-}
-
 img.project-intro {
   margin-top: 20px;
 }
@@ -402,8 +455,8 @@ img.project-work {
 }
 
 h1 {
-  font-size: 72px;
-  margin-top: 50px;
+  font-size: 80px;
+  margin-top: 20px;
 }
 
 h2.main {
@@ -420,7 +473,7 @@ h2.main {
 }
 
 #projects {
-  padding-top: 90px;
+  padding-top: 50px;
   padding-bottom: 60px;
 }
 
@@ -437,7 +490,7 @@ header p {
 @media (min-width: 1200px) {
 
 h1 {
-  margin-top: 150px;
+  margin-top: 30px;
 }
 
 header p {
@@ -457,6 +510,10 @@ h4 {
   font-size: 22px;
 }
 
+button {
+  font-size: 22px;
+}
+
 li, p {
   font-size: 16px;
 }
@@ -466,7 +523,7 @@ p.footer {
 }
 
 .contact-project {
-  margin-top: 50.5px;
+  margin-top: 60.5px;
 }
 
 }
