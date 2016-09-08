@@ -83,7 +83,7 @@
                     <div class="caption">
                         <div class="caption-content">
                             <h4>Kelvin</h4>
-                            <p>Identity Design, UX/UI Design, Web Development</p>
+                            <p>Identity Design, UX/UI Design, Design Implementation</p>
                         </div>
                     </div>
              <div class="table">
@@ -185,16 +185,16 @@
             </li>
         </ul>
 
-        <p class="footer">Designed and developed by Sara Khatri © 2016.</p>
+        <p class="footer">Designed and developed by Sara Khatri &copy 
+            <script type="text/javascript">
+            var d = new Date()
+            document.write(d.getFullYear())
+            </script>
+        </p>
     </div>
  </section>
 
-
-
-
-   
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
     </script>
 
@@ -205,9 +205,9 @@
     <script>
      $(document).ready(function() {
         $(window).scroll(function() {
-            if ($(this).scrollTop() > 100) {
+            if ($(this).scrollTop() < 100) {
                 $('#nav-logo-animate').css({
-                opacity          : 1,
+                opacity          : 0,
             WebkitTransition : 'opacity 1s ease-in-out',
             MozTransition    : 'opacity 1s ease-in-out',
             MsTransition     : 'opacity 1s ease-in-out',
@@ -217,12 +217,7 @@
             } 
             else {
                 $('#nav-logo-animate').css({
-            opacity          : 0,
-            WebkitTransition : 'opacity 1s ease-in-out',
-            MozTransition    : 'opacity 1s ease-in-out',
-            MsTransition     : 'opacity 1s ease-in-out',
-            OTransition      : 'opacity 1s ease-in-out',
-            transition       : 'opacity 1s ease-in-out'
+            opacity          : 1,
             })
             }
         });
@@ -243,17 +238,11 @@
             else {
                 $('.logo-main').css({
             opacity          : 1,
-            WebkitTransition : 'opacity 1s ease-in-out',
-            MozTransition    : 'opacity 1s ease-in-out',
-            MsTransition     : 'opacity 1s ease-in-out',
-            OTransition      : 'opacity 1s ease-in-out',
-            transition       : 'opacity 1s ease-in-out'
             })
             }
         });
     });
     </script>
-
 
     <!-- Google Analytics -->
     <script>

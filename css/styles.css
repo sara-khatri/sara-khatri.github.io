@@ -2,10 +2,6 @@
 
 .navbar-default .navbar-nav>li>a:hover {
   color: #39DCBC;
-  -webkit-transition: all .5s ease-in-out;
-       -moz-transition: all .5s ease-in-out;
-         -o-transition: all .5s ease-in-out;
-            transition: all .5s ease-in-out;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -78,7 +74,8 @@ h4 {
 ol li {
   color: #444444;
   line-height: 2;
-  font-weight: 300; 
+  font-weight: 300;
+  text-align: left; 
 }
 
 p.footer, p.cta {
@@ -215,10 +212,6 @@ nav {
 .navbar li i:hover {
   font-size: 30px;
   color: #39DCBC;
-   -webkit-transition: all .5s ease-in-out;
-       -moz-transition: all .5s ease-in-out;
-         -o-transition: all .5s ease-in-out;
-            transition: all .5s ease-in-out;
 }
 
 .nav>li.next-project>a {
@@ -307,9 +300,10 @@ img.project-cover {
   height: 100%;
   opacity: 0;
   background: rgba(68,68,68,.8);
-  -webkit-transition: all ease .5s;
-  -moz-transition: all ease .5s;
-  transition: all ease .5s;
+  -webkit-transition: all .5s ease-in-out;
+       -moz-transition: all .5s ease-in-out;
+         -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
 }
 
 .caption:hover {
@@ -371,7 +365,6 @@ button {
   font-size: 16px;
   color: #39DCBC;
   font-weight: 400;
-  margin-bottom: 50px;
   -webkit-transition: all .5s ease-in-out;
      -moz-transition: all .5s ease-in-out;
        -o-transition: all .5s ease-in-out;
@@ -381,10 +374,6 @@ button {
 button:hover {
   color: #FFFFFF;
   background: #39DCBC;
-  -webkit-transition: all .5s ease-in-out;
-     -moz-transition: all .5s ease-in-out;
-       -o-transition: all .5s ease-in-out;
-          transition: all .5s ease-in-out;
 }
 
 h4.case-study {
@@ -534,7 +523,7 @@ p.footer {
 }
 
 .contact-project {
-  margin-top: 50.5px;
+  margin-top: 60.5px;
 }
 
 }

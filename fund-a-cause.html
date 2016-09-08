@@ -48,7 +48,7 @@
                 </ul>
                 <ul class="nav navbar-nav nav-center">
                     <li>
-                        <a href="about.html#page-top">About Me</a>
+                        <a href="about.html">About Me</a>
                     </li>
                     <li>
                         <a href="index.html#projects">Projects</a>
@@ -101,16 +101,16 @@
         </div>
         <div class="row">
             <div class="center-block col-xs-8 col-sm-6">
-                <p class="case-study">After designing the identity, I created user personas to help understand the target audience. Using user stories, I then designed the user flow to efficiently achieve user goals such as signing up, creating/updating a profile, searching for projects, donating and creating/updating a project, etc.</p>
+                <p class="case-study">After designing the identity, I created user personas to help understand the target audience and guide design decisions.</p>
             </div>
         </div>
         <div class="row">
             <div class="center-block col-xs-12">
-                <img class="center-block img-responsive project-work" src="img/FC-UserPersonas.jpg">
+                <img class="center-block img-responsive project-work" src="img/FC-UserPersona.png">
             </div>
         </div>
         <div class="row">
-            <div class="center-block col-xs-6">
+            <div class="center-block col-xs-12">
                 <img class="center-block img-responsive project-work" src="img/FC-UserFlow.jpg">
             </div>
         </div>
@@ -122,18 +122,38 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-6">
-                <img class="center-block img-responsive project-work" src="img/FC_Wireframes.jpg">
-            </div>
-            <div class="col-xs-6">
-                <img class="center-block img-responsive project-work" src="img/FC_Mockups.jpg">
+            <div class="col-xs-12">
+                <img class="center-block img-responsive project-work bg" src="img/FC-Wireframes.png">
             </div>
         </div>
         
+        <div class="row">
+            <div class="center-block col-xs-8 col-sm-6">
+                <h4 class="case-study">Redesign</h4>
+                <p class="case-study">Deeper thought about the needs of a charity and donor made me realize several things needed to be changed in my app to better serve their needs. I redesigned the structure, flow and interface of the app to achieve this goal.</p>
+                <p class="case-study">I began with simplifying things on the charity side. In the initial design, charities had a main profile page and the ability to create more pages about specific projects they wanted funding for (similar to apps like GoFundMe and Kickstarter). The problem with this structure was that charities would have to share a lot of information for each project they wanted funding for and that could get rather time consuming for an organization with limited resources. Additionally, they may not always have one specific project they are working on or enough details to share about. This led me to break things down into charity monthly and annual goals and a brief charity description section. Sharing additional information would be optional, materialized in the ability of the charity to give updates on what they are working on. The app emphasizes charities to keep sharing updates on their profile to be perceived as an active charity and attract donors. Simplifying the charity page into one page instead of multiple pages of projects also simplifies the browsing experience of the donor.</p>
+            </div>
+            
+            <div class="center-block col-xs-12"><img class="center-block img-responsive project-work bg" src="img/FC-redesign-charity.png">
+            </div>  
+
+
+            <div class="center-block col-xs-8 col-sm-6">
+                <p class="case-study">I also simplified the onboarding process. As research shows, asking too many questions up front in the registration process can cause many users to leave before completing the process. Now, once a charity or supporter registers on Fund a Cause they don’t need to immediately fill out their profile.<p>
+                
+                <p class="case-study">I changed the user interface to a card-based interface to display information in an easy-to-digest form and make it visually pleasing. I utilized subtle shadows to add depth and draw attention to important elements.</p>
+                
+                <p class="case-study">The new design offers a more personal experience for the supporter. Personal data such as causes a user cares about, donation history, and user initiated follows of specific charities allow for a more personalized user feed for supporters; whereas in the initial design there was only a list about project updates from previous donations.</p>
+            </div>
+
+            <div class="center-block col-xs-12"><img class="center-block img-responsive project-work bg" src="img/FC-redesign-donor.png">
+            </div> 
+           
+        </div>
         <a href="https://invis.io/NT8221YDK" target="_blank"><button>View Prototype</button></a>
     </div>
 
-     <section id="contact">
+     <section id="contact" class="contact-project">
     <div class="container text-center">
         <p class="cta">Like my work? Get in touch!</p>
 
@@ -152,7 +172,12 @@
             </li>
         </ul>
 
-        <p class="footer">Designed and developed by Sara Khatri © 2016.</p>
+        <p class="footer">Designed and developed by Sara Khatri &copy 
+            <script type="text/javascript">
+            var d = new Date()
+            document.write(d.getFullYear())
+            </script>
+        </p>
     </div>
  </section>
   
