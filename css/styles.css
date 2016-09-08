@@ -2,10 +2,18 @@
 
 .navbar-default .navbar-nav>li>a:hover {
   color: #39DCBC;
-  -webkit-transition: all .3s ease-in-out;
-       -moz-transition: all .3s ease-in-out;
-         -o-transition: all .3s ease-in-out;
-            transition: all .3s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+       -moz-transition: all .5s ease-in-out;
+         -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #999999;
+  -webkit-transition: all .5s ease-in-out;
+       -moz-transition: all .5s ease-in-out;
+         -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
 }
 
 body {
@@ -19,7 +27,7 @@ body {
 
 /* Fonts */
 
-h1, h2, h3, h4, p {
+*, h1, h2, h3, h4, p {
   font-family: Hind;
 }
 
@@ -36,22 +44,28 @@ h2.main {
   font-size: 20px;
   margin-top: 0;
   margin-bottom: 30px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 h2 {
   font-size: 30px;
   margin-top: 35px;
+  font-weight: 300;
+  color: #444444;
 
 }
 
 h3 {
   font-size: 18px;
   margin-top: 0;
+  font-weight: 400;
+  color: #39DCBC;
 }
 
 h4 {
   font-size: 16px;
+  font-weight: 400;
+  color: #444444;
 }
 
 .nav>li, p {
@@ -61,6 +75,12 @@ h4 {
   color: #444444;
 }
 
+ol li {
+  color: #444444;
+  line-height: 2;
+  font-weight: 300; 
+}
+
 p.footer, p.cta {
   color: #999999; 
 }
@@ -68,6 +88,11 @@ p.footer, p.cta {
 p.footer {
   font-size: 10px;
   margin-bottom: 0;
+}
+
+p a {
+  color: #39DCBC;
+  font-weight: 500;
 }
 
 /* Images */
@@ -80,29 +105,13 @@ p.footer {
 #contact {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-image: url("../img/pattern_bg.png");
+  background-repeat: repeat;
 }
 
 .contact-project {
   margin-top: 24.5px;
 }
-
-/* Hire Me Button */
-/*button {
-  border: 2px solid #A4B0FF;
-  height: 54px;
-  width: 120px;
-  border-radius: 5%;
-  background-color: #1e255d;
-  font-size: 20px;
-}
-
-button:hover {
-  border: solid 2px #39DCBC;
-  color: #1e255d;
-  background: #39DCBC;
-  transition: all .5s ease-in-out;
-}
-*/
 
 /* Social Media Icons */
 .btn-social {
@@ -194,16 +203,30 @@ nav {
   float:none;
 }
 
+.navbar li i {
+  font-size: 30px;
+  color: #999999;
+  -webkit-transition: all .5s ease-in-out;
+       -moz-transition: all .5s ease-in-out;
+         -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+}
+
+.navbar li i:hover {
+  font-size: 30px;
+  color: #39DCBC;
+   -webkit-transition: all .5s ease-in-out;
+       -moz-transition: all .5s ease-in-out;
+         -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+}
+
 .nav>li.next-project>a {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  margin-top: -8px;
+  padding: 12px 12px;
 }
 
 /* iPhone 5 small project nav */
-.nav>li.next-project>a {
-  padding: 0 0;
-}
-
 .nav-center{
   line-height: 2.4;
 }
@@ -215,13 +238,13 @@ nav {
 
 
 /* Highlight Arrow Background */
-.nav>li.next-project>a:hover {
+/*.nav>li.next-project>a:hover {
   background-color: #39DCBC;
-  -webkit-transition: all .3s ease-in-out;
-       -moz-transition: all .3s ease-in-out;
-         -o-transition: all .3s ease-in-out;
-            transition: all .3s ease-in-out;
-} 
+  -webkit-transition: all .5s ease-in-out;
+       -moz-transition: all .5s ease-in-out;
+         -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+}*/ 
 
 /******* Homepage *******/
 
@@ -318,20 +341,56 @@ img.project-cover {
   margin-bottom: 30px;
 }
 
+h2.about {
+  color: #39DCBC;
+  font-weight: 500;
+  text-align: left;
+}
+
+p.about {
+  margin-top: 20px;
+}
+
+.list-item {
+  font-weight: 700;
+}
+
 /******* Project Pages *******/
 
-p.case-study {
+p.about, p.case-study {
   text-align: left;
   line-height: 2;
 }
 
-a h4 {
-  color: #4dcca3;
+/* Button */
+button {
+  border: 2px solid #39DCBC;
+  padding: 5px 10px;
+  border-radius: 5%;
+  background-color: #FFFFFF;
+  font-size: 16px;
+  color: #39DCBC;
+  font-weight: 400;
+  margin-bottom: 50px;
+  -webkit-transition: all .5s ease-in-out;
+     -moz-transition: all .5s ease-in-out;
+       -o-transition: all .5s ease-in-out;
+          transition: all .5s ease-in-out;
+}
+
+button:hover {
+  color: #FFFFFF;
+  background: #39DCBC;
+  -webkit-transition: all .5s ease-in-out;
+     -moz-transition: all .5s ease-in-out;
+       -o-transition: all .5s ease-in-out;
+          transition: all .5s ease-in-out;
 }
 
 h4.case-study {
   margin-top: 30px;
   margin-bottom: 15px;
+  text-align: left;
 }
 
 img.project-intro {
@@ -347,7 +406,8 @@ img.project-work {
 
 /* Remove iPhone 5 small project nav styles*/
 .nav>li.next-project>a {
-  padding: 12px 15px;
+  margin-top: 0px;
+  padding: 14px 14px;
 }
 
 .nav-center{
@@ -372,6 +432,10 @@ h3 {
 }
 
 h4 {
+  font-size: 18px;
+}
+
+button {
   font-size: 18px;
 }
 
@@ -449,6 +513,10 @@ h3 {
 }
 
 h4 {
+  font-size: 22px;
+}
+
+button {
   font-size: 22px;
 }
 
