@@ -54,7 +54,7 @@ h2 {
 h3 {
   font-size: 18px;
   margin-top: 0;
-  font-weight: 400;
+  font-weight: 500;
   color: #39DCBC;
 }
 
@@ -64,7 +64,7 @@ h4 {
   color: #444444;
 }
 
-.nav>li, p {
+ol li, .nav>li, p {
   font-family: Hind;
   font-weight: 300; 
   font-size: 12px;
@@ -72,10 +72,8 @@ h4 {
 }
 
 ol li {
-  color: #444444;
-  line-height: 2;
-  font-weight: 300;
-  text-align: left; 
+  text-align: left;
+  line-height: 2; 
 }
 
 p.footer, p.cta {
@@ -408,7 +406,7 @@ img.bg {
   line-height: 4;
 }
 
-.nav>li, p { 
+ol li, .nav>li, p { 
   font-size: 14px;
 }
 
@@ -514,7 +512,7 @@ button {
   font-size: 22px;
 }
 
-li, p {
+ol li, p {
   font-size: 16px;
 }
 
