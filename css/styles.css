@@ -391,7 +391,7 @@ img.project-work {
 
 img.bg {
   background: #F7F7F7;
-  padding: 20px 50px;
+  padding: 20px 20px;
 }
 
 @media (min-width: 480px) {
@@ -450,6 +450,10 @@ img.project-intro {
 img.project-work {
   margin-top: 10px;
   margin-bottom: 20.5px;
+}
+
+img.bg {
+  padding: 20px 50px;
 }
 
 h1 {
