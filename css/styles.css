@@ -314,11 +314,45 @@ img.project-cover {
 .caption-content h4 {
   color: #fff;
   font-weight: 300;
+  font-size: 30px;
 }
 
 .caption-content p {
   color: #39DCBC;
   font-weight: 500;
+}
+
+/* Button */
+button {
+  border: 3px solid #39DCBC;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  font-size: 18px;
+  color: #39DCBC;
+  font-weight: 400;
+  -webkit-transition: all .5s ease-in-out;
+     -moz-transition: all .5s ease-in-out;
+       -o-transition: all .5s ease-in-out;
+          transition: all .5s ease-in-out;
+}
+
+button:hover {
+  color: #FFFFFF;
+  background-color: #39DCBC;
+}
+
+button.read-more {
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  color: #FFFFFF;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+button.read-more:hover {
+  background-color: #FFFFFF;
+  color: #39DCBC;
 }
 
 /******* About Page *******/
@@ -347,26 +381,6 @@ p.about {
 p.about, p.case-study {
   text-align: left;
   line-height: 2;
-}
-
-/* Button */
-button {
-  border: 3px solid #39DCBC;
-  padding: 5px 10px;
-  border-radius: 4px;
-  background-color: #FFFFFF;
-  font-size: 18px;
-  color: #39DCBC;
-  font-weight: 400;
-  -webkit-transition: all .5s ease-in-out;
-     -moz-transition: all .5s ease-in-out;
-       -o-transition: all .5s ease-in-out;
-          transition: all .5s ease-in-out;
-}
-
-button:hover {
-  color: #FFFFFF;
-  background: #39DCBC;
 }
 
 h4.case-study {
@@ -420,10 +434,6 @@ img.border {
 body {
   padding-top: 60px;
 } 
-
-.caption-content h4 {
-  font-size: 30px;
-}
 
 img.project-intro {
   margin-top: 20px;
