@@ -67,7 +67,7 @@ h4 {
 ol li, .nav>li, p {
   font-family: Hind;
   font-weight: 300; 
-  font-size: 12px;
+  font-size: 14px;
   color: #444444;
 }
 
@@ -199,7 +199,7 @@ nav {
 }
 
 .navbar li i {
-  font-size: 30px;
+  font-size: 20px;
   color: #999999;
   -webkit-transition: all .5s ease-in-out;
        -moz-transition: all .5s ease-in-out;
@@ -208,13 +208,12 @@ nav {
 }
 
 .navbar li i:hover {
-  font-size: 30px;
   color: #39DCBC;
 }
 
 .nav>li.next-project>a {
   margin-top: -8px;
-  padding: 12px 12px;
+  padding: 16px 0px;
 }
 
 /* iPhone 5 small project nav */
@@ -410,10 +409,6 @@ img.border {
   line-height: 4;
 }
 
-ol li, .nav>li, p { 
-  font-size: 14px;
-}
-
 .navbar-inner {
   padding: 0 0; 
 }
@@ -467,6 +462,14 @@ h1 {
 
 h2.main {
   font-size: 30px;
+}
+
+.navbar li i {
+  font-size: 30px;
+}
+
+.nav>li.next-project>a {
+  padding: 12px 12px;
 }
 
 }
