@@ -67,7 +67,7 @@ h4 {
 ol li, .nav>li, p {
   font-family: Hind;
   font-weight: 300; 
-  font-size: 14px;
+  font-size: 16px;
   color: #444444;
 }
 
@@ -413,10 +413,6 @@ img.border {
   padding: 0 0; 
 }
 /**/
-
-p.footer {
-  font-size: 12px;
-}
 
 h3 {
   font-size: 20px;
