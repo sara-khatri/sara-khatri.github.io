@@ -308,7 +308,7 @@ img.project-cover {
     display: table-cell;
     height: 100%;
     width: 100%;
-    vertical-align: center;
+    vertical-align: middle;
     /*margin-top: -12px;*/
     text-align: center;
 }
