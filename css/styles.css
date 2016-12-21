@@ -29,8 +29,8 @@ body {
 
 h1 {
   color: #444444;
-  margin-top: 35px;
-  margin-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: -5px;
   font-size: 40px;
   font-weight: 300;
 }
@@ -429,6 +429,10 @@ img.border {
   font-size: 30px;
 }
 
+h1 {
+  font-size: 60px;
+}
+
 }
 
 @media (min-width: 768px) {
@@ -456,7 +460,7 @@ h1 {
 }
 
 h2.main {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .nav>li.next-project>a {
@@ -485,9 +489,9 @@ h2.main {
   padding-bottom: 60px;
 }
 
-h1 {
+/*h1 {
   margin-top: 100px;
-}
+}*/
 
 }
 
@@ -495,6 +499,7 @@ h1 {
 
 h1 {
   margin-top: 30px;
+  font-size: 90px;
 }
 
 h2 {
