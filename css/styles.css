@@ -329,9 +329,9 @@ button {
   border: 3px solid #39DCBC;
   padding: 5px 10px;
   border-radius: 4px;
-  background-color: #FFFFFF;
+  color: #FFFFFF;
+  background-color: #39DCBC;
   font-size: 18px;
-  color: #39DCBC;
   font-weight: 400;
   -webkit-transition: all .5s ease-in-out;
      -moz-transition: all .5s ease-in-out;
@@ -340,8 +340,8 @@ button {
 }
 
 button:hover {
-  color: #FFFFFF;
-  background-color: #39DCBC;
+  background-color: #FFFFFF;
+  color: #39DCBC;
 }
 
 button.read-more {
