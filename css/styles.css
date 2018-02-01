@@ -471,6 +471,24 @@ h2.main {
 
 @media (min-width: 992px) {
 
+h1 {
+  margin-top: 30px;
+  font-size: 90px;
+}
+
+h2 {
+  font-size: 45px;
+  margin-top: 60px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
 .caption {
   opacity: 0;
 }
@@ -497,26 +515,12 @@ h2.main {
 
 @media (min-width: 1200px) {
 
-h1 {
-  margin-top: 30px;
-  font-size: 90px;
-}
-
-h2 {
-  font-size: 45px;
-  margin-top: 60px;
-}
-
-h3 {
-  font-size: 28px;
-}
-
-h4 {
-  font-size: 22px;
-}
-
 button {
   font-size: 22px;
+}
+
+p {
+  font-size: 18px;
 }
 
 .contact-project {
