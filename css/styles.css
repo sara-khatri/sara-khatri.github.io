@@ -32,7 +32,7 @@ h1 {
   margin-top: 20px;
   margin-bottom: -5px;
   font-size: 40px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 h2.main {
@@ -382,7 +382,8 @@ p.about {
 
 p.about, p.case-study {
   text-align: left;
-  line-height: 2;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 h4.case-study {
